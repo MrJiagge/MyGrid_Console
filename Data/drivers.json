@@ -1,0 +1,39 @@
+[
+{
+    "DriverId": 1,
+    "Name": "Lewis Hamilton",
+    "Nationality": "UK",
+    "Championships": 7,
+    "CarStats": [
+      {
+        "CarId": 1,
+        "Season": 2020,
+        "Wins": 11,
+        "Podiums": 14,
+        "Points": 347,
+        "Poles": 10,
+        "FastestLaps": 6
+      },
+      {
+        "CarId": 2,
+        "Season": 2008,
+        "Wins": 5,
+        "Podiums": 10,
+        "Points": 98,
+        "Poles": 2,
+        "FastestLaps": 1
+      }
+    ]
+},
+
+{
+    "DriverId": 2,
+    "Name": "Sebastian Vettel"
+},
+
+{
+        "DriverId": 3,
+        "Name": "Valtteri Bottas"
+}
+  
+]

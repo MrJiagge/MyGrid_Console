@@ -1,0 +1,14 @@
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.AssemblyInfoInputs.cache
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.AssemblyInfo.cs
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.csproj.CoreCompileInputs.cache
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\bin\Debug\net9.0\MyGridConsole.exe
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\bin\Debug\net9.0\MyGridConsole.deps.json
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\bin\Debug\net9.0\MyGridConsole.runtimeconfig.json
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\bin\Debug\net9.0\MyGridConsole.dll
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\bin\Debug\net9.0\MyGridConsole.pdb
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.dll
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\refint\MyGridConsole.dll
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.pdb
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.genruntimeconfig.cache
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\ref\MyGridConsole.dll
