@@ -9,9 +9,8 @@ namespace MyGrid_Console.Interfaces
     public interface ICarService
     {
         public List<F1Car> GetAllCars();
-        public F1Car? GetCarById(int carId); // can be null if not found
+        public F1Car? GetCarByCarId(int carId);
 
-        // Get a list of cars driven by a specific driver
         public List<F1Car> GetCarsByDriverId(int driverId);
     }
 }

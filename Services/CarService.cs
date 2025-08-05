@@ -21,7 +21,7 @@ namespace MyGrid_Console.Services
         // TODO: Implement the methods
         public List<F1Car> GetAllCars() => _cars;
 
-        public F1Car? GetCarById(int carId) => _cars.FirstOrDefault(c => c.CarId == carId);
+        public F1Car? GetCarByCarId(int carId) => _cars.FirstOrDefault(c => c.CarId == carId);
 
         public List<F1Car> GetCarsByDriverId(int driverId) => [.. _cars.Where(c => c.DriverIds.Contains(driverId))];
 

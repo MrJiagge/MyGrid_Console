@@ -2,9 +2,8 @@
 {
     "DriverId": 1,
     "Name": "Lewis Hamilton",
-    "Nationality": "UK",
-    "Championships": 7,
-    "CarsDrivenAndStats": [
+    "SeasonResults": 
+    [
       {
         "CarId": 1,
         "Season": 2020,
@@ -25,30 +24,29 @@
       }
     ]
 },
-
 {
     "DriverId": 2,
-    "Name": "Sebastian Vettel"
-},
-
-{
-    "DriverId": 3,
-    "Name": "Valteri Bottas",
-    "Nationality": "Finland",
-    "Championships": 0,
-    "CarsDrivenAndStats": [
+    "Name": "Max Verstappen",
+    "SeasonResults": 
+    [
       {
-        "CarId": 1,
-        "Season": 2020,
-        "Wins": 2,
-        "Podiums": 5,
-        "Points": 223,
-        "Poles": 3,
+        "CarId": 3,
+        "Season": 2021,
+        "Wins": 10,
+        "Podiums": 18,
+        "Points": 395,
+        "Poles": 2,
+        "FastestLaps": 3
+      },
+      {
+        "CarId": 4,
+        "Season": 2019,
+        "Wins": 3,
+        "Podiums": 6,
+        "Points": 278,
+        "Poles": 1,
         "FastestLaps": 2
       }
-      
     ]
 }
-
-  
 ]

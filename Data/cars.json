@@ -2,30 +2,103 @@
   {
     "CarId": 1,
     "Name": "Mercedes-AMG F1 W11 EQ Performance",
-    "Year": 2020,
-    "TopSpeed": 350,
-    "Points": 573,
-    "Poles": 15,
-    "FastestLaps": 9,
-    "Rating": 9.8,
-    "DriverIds": [1, 3]
+    "DriverIds": [1],
+
+    "Results":
+    [
+      {
+        "CarId": 1,
+        "Year": 2020,
+        "PlaceInConstructorChampionship": 1,
+        "Points": 573,
+        "Wins": 13,
+        "Podiums": 17,
+        "Poles": 15,
+        "FastestLaps": 9
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Mercedes",
+      "TopSpeed": 350
+    }
+
   },
   {
     "CarId": 2,
     "Name": "McLaren MP4-23",
-    "Year": 2008,
-    "TopSpeed": 340,
-    "Points": 151,
-    "Rating": 8.7,
-    "DriverIds": [1]
+    "DriverIds": [1],
+
+    "Results":
+    [
+      {
+        "CarId": 2,
+        "Year": 2008,
+        "PlaceInConstructorChampionship": 1,
+        "Points": 172,
+        "Wins": 8,
+        "Podiums": 15,
+        "Poles": 5,
+        "FastestLaps": 3
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Mercedes",
+      "TopSpeed": 340
+    }
   },
   {
     "CarId": 3,
-    "Name": "Red Bull RB7",
-    "Year": 2011,
-    "TopSpeed": 345,
-    "Points": 650,
-    "Rating": 9.5,
-    "DriverIds": [2]
+    "Name": "Red Bull Racing RB16",
+    "DriverIds": [2],
+
+    "Results":
+    [
+      {
+        "CarId": 3,
+        "Year": 2021,
+        "PlaceInConstructorChampionship": 2,
+        "Points": 585,
+        "Wins": 11,
+        "Podiums": 18,
+        "Poles": 2,
+        "FastestLaps": 3
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Honda",
+      "TopSpeed": 360
+    }
+  },
+  {
+    "CarId": 4,
+    "Name": "Red Bull Racing RB15",
+    "DriverIds": [2],
+
+    "Results":
+    [
+      {
+        "CarId": 4,
+        "Year": 2019,
+        "PlaceInConstructorChampionship": 3,
+        "Points": 417,
+        "Wins": 3,
+        "Podiums": 6,
+        "Poles": 1,
+        "FastestLaps": 2
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Honda",
+      "TopSpeed": 355
+    }
   }
+
 ]
