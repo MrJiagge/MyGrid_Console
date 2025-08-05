@@ -4,7 +4,7 @@
     "Name": "Lewis Hamilton",
     "Nationality": "UK",
     "Championships": 7,
-    "CarStats": [
+    "CarsDrivenAndStats": [
       {
         "CarId": 1,
         "Season": 2020,
@@ -32,8 +32,23 @@
 },
 
 {
-        "DriverId": 3,
-        "Name": "Valtteri Bottas"
+    "DriverId": 3,
+    "Name": "Valteri Bottas",
+    "Nationality": "Finland",
+    "Championships": 0,
+    "CarsDrivenAndStats": [
+      {
+        "CarId": 1,
+        "Season": 2020,
+        "Wins": 2,
+        "Podiums": 5,
+        "Points": 223,
+        "Poles": 3,
+        "FastestLaps": 2
+      }
+      
+    ]
 }
+
   
 ]

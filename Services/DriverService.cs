@@ -20,9 +20,6 @@ namespace MyGrid_Console.Services
         // This constructor is called when the service is instantiated
         public DriverService()
         {
-            // Load drivers from a JSON file
-            // This method reads the JSON file and deserializes it into a list of F1Driver objects
-            // If the file is not found or the JSON is invalid, it will return an empty
             _drivers = LoadDriversFromJson();
         }
 
@@ -30,32 +27,18 @@ namespace MyGrid_Console.Services
         // These methods are defined in the IDriverService interface and implemented here
         public List<F1Driver> GetAllDrivers() => _drivers;
 
-        // Get a driver by ID
-        // This method returns a driver with the specified ID or null if not found
+
         public F1Driver? GetDriverById(int id) => _drivers.FirstOrDefault(d => d.DriverId == id);
 
-        // Get drivers by car ID
-        // This method returns a list of drivers who have stats for the specified car ID
-        public List<F1Driver> GetDriversByCarId(int carId)
-        {
-            // Use LINQ to filter the drivers based on their car stats
-            // It checks if any of the driver's car stats match the given car ID
-            return [.. _drivers.Where(d => d.CarStats.Any(cs => cs.CarId == carId))]; // list
-        }
 
-        // Get car stats for a specific driver
-        // This method returns a list of car stats for the driver with the specified ID
+        public List<F1Driver> GetDriversByCarId(int carId) => [.. _drivers.Where(d => d.CarsDrivenAndStats.Any(cs => cs.CarId == carId))];
+
+
         public List<DriverCarStats> GetDriverCarStats(int driverId)
         {
-            // Find the driver by ID and return their car stats
-            // If the driver is not found, it will return an empty list
-            return GetDriverById(driverId)?.CarStats ?? [];
+            return GetDriverById(driverId)?.CarsDrivenAndStats ?? [];
         }
 
-        // Private method to load drivers from a JSON file
-        // This method reads the JSON file and deserializes it into a list of F1Driver objects
-        // If the file is not found or the JSON is invalid, it will return an empty list
-        // This method is private because it is only used within this service
         private static List<F1Driver> LoadDriversFromJson()
         {
             var json = File.ReadAllText("Data/drivers.json");

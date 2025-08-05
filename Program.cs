@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MyGrid_Console.Services;
+using MyGrid_Console.Models;
 
 namespace MyGrid_Console
 {
@@ -10,32 +12,18 @@ namespace MyGrid_Console
         public static void Main(string[] args)
         {
             // Initialize services and run the application
-            var driverService = new Services.DriverService();
-            var drivers = driverService.GetAllDrivers();
+            var driverService = new DriverService();
+            var carService = new CarService();
 
-            foreach (var driver in drivers)
-            {
-                Console.WriteLine($"Driver ID: {driver.DriverId}, Name: {driver.Name}");
-            }
-
-            // Example of getting a specific driver by ID
-            var specificDriver = driverService.GetDriverById(1);
-            if (specificDriver != null)
-            {
-                Console.WriteLine($"Found Driver: {specificDriver.Name}");
-            }
-            else
-            {
-                Console.WriteLine("Driver not found.");
-            }
-
-            // Example of getting drivers by car ID
-            var carId = 1; // Example car ID
+            // example of getting drivers from car id
+            var carId = 1; // example car id
             var driversByCar = driverService.GetDriversByCarId(carId);
+            var carFromCarId = carService.GetCarById(carId);
+            Console.WriteLine($"Car ID {carId}: {carFromCarId?.Name}");
             Console.WriteLine($"Drivers for Car ID {carId}:");
             foreach (var driver in driversByCar)
             {
-                Console.WriteLine($"- {driver.Name}");
+                Console.WriteLine($"- {driver.Name} (ID: {driver.DriverId})");
             }
         }
     }

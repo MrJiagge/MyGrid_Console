@@ -12,3 +12,4 @@ C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\refint\MyGrid
 C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.pdb
 C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.genruntimeconfig.cache
 C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\ref\MyGridConsole.dll
+C:\Users\mrjia\Documents\Random C#\MyGrid Console\obj\Debug\net9.0\MyGridConsole.sourcelink.json
