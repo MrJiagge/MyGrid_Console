@@ -99,6 +99,81 @@
       "Engine": "Honda",
       "TopSpeed": 355
     }
+  },
+  {
+    "CarId": 5,
+    "Name": "Ferrari SF71H",
+    "DriverIds": [3],
+
+    "Results":
+    [
+      {
+        "CarId": 5,
+        "Year": 2017,
+        "PlaceInConstructorChampionship": 2,
+        "Points": 398,
+        "Wins": 5,
+        "Podiums": 12,
+        "Poles": 4,
+        "FastestLaps": 2
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Ferrari",
+      "TopSpeed": 345
+    }
+  },
+  {
+    "CarId": 6,
+    "Name": "Ferrari SF90",
+    "DriverIds": [4],
+
+    "Results":
+    [
+      {
+        "CarId": 6,
+        "Year": 2019,
+        "PlaceInConstructorChampionship": 2,
+        "Points": 504,
+        "Wins": 3,
+        "Podiums": 10,
+        "Poles": 7,
+        "FastestLaps": 4
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Ferrari",
+      "TopSpeed": 350
+    }
+  },
+  {
+    "CarId": 7,
+    "Name": "Ferrari SF1000",
+    "DriverIds": [4],
+
+    "Results":
+    [
+      {
+        "CarId": 7,
+        "Year": 2020,
+        "PlaceInConstructorChampionship": 6,
+        "Points": 131,
+        "Wins": 2,
+        "Podiums": 7,
+        "Poles": 2,
+        "FastestLaps": 1
+      }
+    ],
+
+    "Specs":
+    {
+      "Engine": "Ferrari",
+      "TopSpeed": 340
+    }
   }
 
 ]

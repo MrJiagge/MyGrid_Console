@@ -9,6 +9,7 @@ namespace MyGrid_Console.Models
     {
         public int DriverId { get; set; }
         public string Name { get; set; } = string.Empty;
+        public string Nationality { get; set; } = string.Empty;
         public required List<DriversCarSeasonResults> SeasonResults { get; set; } = [];
         
     }

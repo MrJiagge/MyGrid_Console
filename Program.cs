@@ -10,17 +10,38 @@ namespace MyGrid_Console
 {}
     public class Program
     {
-        public static void Main(string[] args)
-        {
-            CarService carService = new();
-            DriverService driverService = new();
+    public static void Main(string[] args)
+    {
+        CarService carService = new();
+        DriverService driverService = new();
+        List<F1Driver> drivers = driverService.GetAllDrivers();
 
-            List<F1Car> allCars = carService.GetAllCars();
-
-        for (int i = 0; i < allCars.Count; i++)
+        Console.WriteLine("List of F1 Drivers:");
+        // wait 2 seconds before displaying the list
+        Task.Delay(2000).Wait();
+        foreach (var driver in drivers)
         {
-            Console.WriteLine($"Car ID: {allCars[i].CarId}, Name: {allCars[i].Name}");
+            Console.WriteLine($"Driver ID: {driver.DriverId}, Name: {driver.Name}");
         }
+
+        Task.Delay(1000).Wait();
+
+        Console.Write("Enter Driver ID to get details: ");
+        int selectedDriverId = int.Parse(Console.ReadLine() ?? "0");
+        F1Driver selectedDriver = driverService.GetDriverByDriverId(selectedDriverId);
+        // get ONLY the names of the cars driven by the selected driver
+        var carsDriven = selectedDriver?.SeasonResults?
+            .Select(sr => carService.GetCarByCarId(sr.CarId)?.Name)
+            .Where(name => !string.IsNullOrEmpty(name))
+            .Distinct()
+            .ToList() ?? [];
+
+        foreach (var carName in carsDriven)
+        {
+            Console.WriteLine($"Car Driven: {carName}");
+        }
+        
+
     }   
 }
 

@@ -2,6 +2,7 @@
 {
     "DriverId": 1,
     "Name": "Lewis Hamilton",
+    "Nationality": "British",
     "SeasonResults": 
     [
       {
@@ -27,6 +28,7 @@
 {
     "DriverId": 2,
     "Name": "Max Verstappen",
+    "Nationality": "Dutch",
     "SeasonResults": 
     [
       {
@@ -46,6 +48,74 @@
         "Points": 278,
         "Poles": 1,
         "FastestLaps": 2
+      }
+    ]
+},
+{
+    "DriverId": 3,
+    "Name": "Sebastian Vettel",
+    "Nationality": "German",
+    "SeasonResults": 
+    [
+      {
+        "CarId": 5,
+        "Season": 2017,
+        "Wins": 5,
+        "Podiums": 12,
+        "Points": 363,
+        "Poles": 4,
+        "FastestLaps": 2
+      }
+    ]
+},
+{
+    "DriverId": 4,
+    "Name": "Charles Leclerc",
+    "Nationality": "Monégasque",
+    "SeasonResults": 
+    [
+      {
+        "CarId": 6,
+        "Season": 2020,
+        "Wins": 2,
+        "Podiums": 7,
+        "Points": 98,
+        "Poles": 1,
+        "FastestLaps": 0
+      }
+    ]
+},
+{
+    "DriverId": 5,
+    "Name": "Daniel Ricciardo",
+    "Nationality": "Australian",
+    "SeasonResults": 
+    [
+      {
+        "CarId": 7,
+        "Season": 2018,
+        "Wins": 1,
+        "Podiums": 3,
+        "Points": 170,
+        "Poles": 0,
+        "FastestLaps": 1
+      }
+    ]
+},
+{
+    "DriverId": 6,
+    "Name": "Carlos Sainz",
+    "Nationality": "Spanish",
+    "SeasonResults": 
+    [
+      {
+        "CarId": 8,
+        "Season": 2021,
+        "Wins": 0,
+        "Podiums": 2,
+        "Points": 112,
+        "Poles": 0,
+        "FastestLaps": 0
       }
     ]
 }

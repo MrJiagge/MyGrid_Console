@@ -37,5 +37,9 @@ namespace MyGrid_Console.Services
         public List<DriversCarSeasonResults> GetDriversCarSeasonResultsByDriverId(int driverId) =>
             _drivers.FirstOrDefault(d => d.DriverId == driverId)?.SeasonResults
             ?? throw new KeyNotFoundException($"Driver with ID {driverId} not found or has no season results.");
+
+        public F1Driver GetDriverByName(string name) =>
+            _drivers.FirstOrDefault(d => d.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+            ?? throw new KeyNotFoundException($"Driver with name {name} not found.");
     }
 }
