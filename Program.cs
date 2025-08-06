@@ -17,7 +17,6 @@ namespace MyGrid_Console
         List<F1Driver> drivers = driverService.GetAllDrivers();
 
         Console.WriteLine("List of F1 Drivers:");
-        // wait 2 seconds before displaying the list
         Task.Delay(2000).Wait();
         foreach (var driver in drivers)
         {
