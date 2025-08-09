@@ -17,15 +17,18 @@ namespace MyGrid_Console
         List<F1Driver> drivers = driverService.GetAllDrivers();
 
         Console.WriteLine("List of F1 Drivers:");
-        Task.Delay(2000).Wait();
+        Task.Delay(1000).Wait();
+        Console.WriteLine("-------------------------");
+        Console.WriteLine("(Id)\tName");
+
         foreach (var driver in drivers)
         {
-            Console.WriteLine($"Driver ID: {driver.DriverId}, Name: {driver.Name}");
+            Console.WriteLine($"{driver.DriverId}:\t{driver.Name}\t");
         }
 
-        Task.Delay(1000).Wait();
+        Task.Delay(2000).Wait();
 
-        Console.Write("Enter Driver ID to get details: ");
+        Console.Write("\nEnter Driver ID to get details: ");
         int selectedDriverId = int.Parse(Console.ReadLine() ?? "0");
         F1Driver selectedDriver = driverService.GetDriverByDriverId(selectedDriverId);
         // get ONLY the names of the cars driven by the selected driver
@@ -35,9 +38,13 @@ namespace MyGrid_Console
             .Distinct()
             .ToList() ?? [];
 
+        Task.Delay(2000).Wait();
+
+        Console.WriteLine($"Cars Driven by {selectedDriver?.Name}:");
+        Task.Delay(2000).Wait();
         foreach (var carName in carsDriven)
         {
-            Console.WriteLine($"Car Driven: {carName}");
+            Console.Write($"{carName}\t");
         }
         
 

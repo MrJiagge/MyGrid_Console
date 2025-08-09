@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyGridConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f99543017e1b8a4039758812623699a95fc5e65b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+309e0be026eec0bdc37ba2080fa8daab652a8ef7")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyGridConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyGridConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
